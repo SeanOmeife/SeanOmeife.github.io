@@ -181,8 +181,8 @@
   .card.card-wide{grid-column:1 / -1;}
   .arch-diagram{width:100%; height:auto; display:block; margin:2px 0 0;}
   .arch-box{fill:var(--panel); stroke:var(--panel-border); stroke-width:1.4;}
-  .arch-title{font-family:var(--sans); font-size:12.5px; font-weight:600; fill:var(--text);}
-  .arch-sub{font-family:var(--mono); font-size:9.5px; fill:var(--muted);}
+  .arch-title{font-family:var(--sans); font-size:12px; font-weight:600; fill:var(--text);}
+  .arch-sub{font-family:var(--mono); font-size:9px; fill:var(--muted);}
   .arch-arrow{stroke:var(--accent-2); stroke-width:2;}
   .arch-arrowhead{fill:var(--accent-2);}
   .arch-caption{font-family:var(--mono); font-size:10.5px; fill:var(--muted-dim);}
@@ -353,32 +353,34 @@
         <h3>MedExploit</h3>
         <p>MSc dissertation project developing a framework for vulnerability discovery and exploit hypothesis generation on the DICOM protocol, evaluated in a controlled lab environment. A three-module pipeline — protocol analysis, vulnerability reasoning, and exploit validation — benchmarked against OpenVAS, Metasploit, and Nessus inside an isolated hospital/attacker lab.</p>
 
-        <svg class="arch-diagram" viewBox="0 0 700 150" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="MedExploit pipeline: Protocol Analysis Engine feeds the Vulnerability Reasoning Module, which feeds the Exploit Validation Module">
+        <svg class="arch-diagram" viewBox="0 0 734 170" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="MedExploit pipeline: Protocol Analysis Engine feeds the Vulnerability Reasoning Module, which feeds the Exploit Validation Module">
           <defs>
             <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
               <path d="M0,0 L10,5 L0,10 z" class="arch-arrowhead"></path>
             </marker>
           </defs>
-          <line x1="198" y1="60" x2="254" y2="60" class="arch-arrow" marker-end="url(#arrow)"></line>
-          <line x1="462" y1="60" x2="518" y2="60" class="arch-arrow" marker-end="url(#arrow)"></line>
+          <line x1="206" y1="62" x2="246" y2="62" class="arch-arrow" marker-end="url(#arrow)"></line>
+          <line x1="474" y1="62" x2="514" y2="62" class="arch-arrow" marker-end="url(#arrow)"></line>
 
-          <rect x="16" y="22" width="182" height="76" rx="8" class="arch-box"></rect>
-          <text x="107" y="50" text-anchor="middle" class="arch-title">Protocol Analysis</text>
-          <text x="107" y="66" text-anchor="middle" class="arch-title">Engine</text>
-          <text x="107" y="85" text-anchor="middle" class="arch-sub">protocol-aware fuzzing</text>
+          <rect x="14" y="20" width="192" height="84" rx="8" class="arch-box"></rect>
+          <text x="110" y="45" text-anchor="middle" class="arch-title">Protocol</text>
+          <text x="110" y="61" text-anchor="middle" class="arch-title">Analysis Engine</text>
+          <text x="110" y="82" text-anchor="middle" class="arch-sub">protocol-aware fuzzing</text>
 
-          <rect x="254" y="12" width="208" height="96" rx="8" class="arch-box"></rect>
-          <text x="358" y="38" text-anchor="middle" class="arch-title">Vulnerability</text>
-          <text x="358" y="54" text-anchor="middle" class="arch-title">Reasoning Module</text>
-          <text x="358" y="72" text-anchor="middle" class="arch-sub">Healthcare Risk Score (CVSS + EPSS + asset)</text>
-          <text x="358" y="85" text-anchor="middle" class="arch-sub">LLM hypothesis generation</text>
+          <rect x="246" y="10" width="228" height="104" rx="8" class="arch-box"></rect>
+          <text x="360" y="32" text-anchor="middle" class="arch-title">Vulnerability</text>
+          <text x="360" y="48" text-anchor="middle" class="arch-title">Reasoning Module</text>
+          <text x="360" y="66" text-anchor="middle" class="arch-sub">Healthcare Risk Score</text>
+          <text x="360" y="80" text-anchor="middle" class="arch-sub">(CVSS + EPSS + asset)</text>
+          <text x="360" y="97" text-anchor="middle" class="arch-sub">LLM hypothesis generation</text>
 
-          <rect x="518" y="22" width="166" height="76" rx="8" class="arch-box"></rect>
-          <text x="601" y="50" text-anchor="middle" class="arch-title">Exploit Validation</text>
-          <text x="601" y="66" text-anchor="middle" class="arch-title">Module</text>
-          <text x="601" y="85" text-anchor="middle" class="arch-sub">vs OpenVAS · Metasploit · Nessus</text>
+          <rect x="514" y="20" width="204" height="84" rx="8" class="arch-box"></rect>
+          <text x="616" y="45" text-anchor="middle" class="arch-title">Exploit</text>
+          <text x="616" y="61" text-anchor="middle" class="arch-title">Validation Module</text>
+          <text x="616" y="79" text-anchor="middle" class="arch-sub">vs OpenVAS,</text>
+          <text x="616" y="92" text-anchor="middle" class="arch-sub">Metasploit, Nessus</text>
 
-          <text x="350" y="132" text-anchor="middle" class="arch-caption">Design Science Research pipeline — evaluated in an isolated hospital/attacker lab (Kali + Orthanc PACS)</text>
+          <text x="367" y="152" text-anchor="middle" class="arch-caption">Design Science Research pipeline — evaluated in an isolated hospital/attacker lab (Kali + Orthanc PACS)</text>
         </svg>
 
         <div class="tag-row">
