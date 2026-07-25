@@ -157,6 +157,7 @@
   .about-text p{color:var(--muted); margin-bottom:16px; font-size:15.5px;}
   .about-text strong{color:var(--text); font-weight:600;}
   .stat-list{display:grid; grid-template-columns:1fr 1fr; gap:14px;}
+  .about-side{display:flex; flex-direction:column; gap:16px;}
   .stat{
     border:1px solid var(--panel-border); border-radius:6px; padding:16px;
     background:var(--panel);
@@ -208,9 +209,8 @@
   /* Toolkit */
   .toolkit-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:24px;}
   .toolkit-group h4{font-family:var(--mono); font-size:12px; color:var(--accent); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:14px;}
-  .toolkit-group ul{list-style:none;}
-  .toolkit-group li{color:var(--muted); font-size:14px; padding:5px 0; border-bottom:1px dashed var(--panel-border);}
-  .toolkit-group li:last-child{border-bottom:none;}
+  .badge-row{display:flex; flex-wrap:wrap; gap:8px;}
+  .badge-row img{height:26px; display:block;}
 
   /* Contact / footer */
   .contact{border-bottom:none; padding-bottom:60px;}
@@ -312,11 +312,13 @@
       <p>My dissertation, <strong>MedExploit</strong>, is a framework for vulnerability discovery and exploit hypothesis generation focused on the DICOM protocol in healthcare environments, evaluated in a controlled lab environment — research that sits at the intersection of protocol analysis, threat reasoning, and defensive validation.</p>
       <p>Alongside my studies I work part-time as a <strong>Retail Sales Adviser at Marks &amp; Spencer</strong>, where I once flagged anomalous point-of-sale behaviour that was later confirmed as a company-wide security incident — a reminder that security instinct matters as much off a screen as on one.</p>
     </div>
-    <div class="stat-list">
-      <div class="stat"><span class="n">Security+</span><span class="d">CompTIA certified, 776/900 (Apr 2026)</span></div>
-      <div class="stat"><span class="n">Zerodays CTF</span><span class="d">2026 — Croke Park</span></div>
-      <div class="stat"><span class="n">50+ days</span><span class="d">TryHackMe SOC lab streak</span></div>
-      <div class="stat"><span class="n">67/100</span><span class="d">Threat model, with commendation</span></div>
+    <div class="about-side">
+      <div class="stat-list">
+        <div class="stat"><span class="n">Security+</span><span class="d">CompTIA certified, 776/900 (Apr 2026)</span></div>
+        <div class="stat"><span class="n">Zerodays CTF</span><span class="d">2026 — Croke Park</span></div>
+        <div class="stat"><span class="n">50+ days</span><span class="d">TryHackMe SOC lab streak</span></div>
+        <div class="stat"><span class="n">67/100</span><span class="d">Threat model, with commendation</span></div>
+      </div>
     </div>
   </div>
 </section>
@@ -458,19 +460,36 @@
     <div class="toolkit-grid">
       <div class="toolkit-group">
         <h4>Detection &amp; Response</h4>
-        <ul><li>Splunk</li><li>Microsoft Sentinel</li><li>MITRE ATT&amp;CK</li><li>STRIDE</li></ul>
+        <div class="badge-row">
+          <img src="https://img.shields.io/badge/Splunk-000000?style=for-the-badge&logo=splunk&logoColor=white" alt="Splunk" loading="lazy">
+          <img src="https://img.shields.io/badge/Microsoft_Sentinel-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white" alt="Microsoft Sentinel" loading="lazy">
+          <img src="https://img.shields.io/badge/MITRE_ATT%26CK-A91E22?style=for-the-badge" alt="MITRE ATT&amp;CK" loading="lazy">
+          <img src="https://img.shields.io/badge/STRIDE-374151?style=for-the-badge" alt="STRIDE" loading="lazy">
+        </div>
       </div>
       <div class="toolkit-group">
         <h4>Offensive Security</h4>
-        <ul><li>Kali Linux</li><li>Metasploit</li><li>Nessus</li><li>OpenVAS</li></ul>
+        <div class="badge-row">
+          <img src="https://img.shields.io/badge/Kali_Linux-557C94?style=for-the-badge&logo=kalilinux&logoColor=white" alt="Kali Linux" loading="lazy">
+          <img src="https://img.shields.io/badge/Metasploit-2596CD?style=for-the-badge&logo=metasploit&logoColor=white" alt="Metasploit" loading="lazy">
+          <img src="https://img.shields.io/badge/Nessus-66C430?style=for-the-badge" alt="Nessus" loading="lazy">
+          <img src="https://img.shields.io/badge/OpenVAS-77C043?style=for-the-badge" alt="OpenVAS" loading="lazy">
+        </div>
       </div>
       <div class="toolkit-group">
         <h4>Platforms &amp; Infra</h4>
-        <ul><li>Docker</li><li>VirtualBox</li><li>Git</li></ul>
+        <div class="badge-row">
+          <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" loading="lazy">
+          <img src="https://img.shields.io/badge/VirtualBox-183A61?style=for-the-badge&logo=virtualbox&logoColor=white" alt="VirtualBox" loading="lazy">
+          <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" loading="lazy">
+        </div>
       </div>
       <div class="toolkit-group">
         <h4>Certifications</h4>
-        <ul><li>CompTIA Security+</li><li>Cisco Cloud Security</li></ul>
+        <div class="badge-row">
+          <img src="https://img.shields.io/badge/CompTIA_Security%2B-E2231A?style=for-the-badge&logo=comptia&logoColor=white" alt="CompTIA Security+" loading="lazy">
+          <img src="https://img.shields.io/badge/Cisco_Cloud_Security-1BA0D7?style=for-the-badge&logo=cisco&logoColor=white" alt="Cisco Cloud Security" loading="lazy">
+        </div>
       </div>
     </div>
   </div>
